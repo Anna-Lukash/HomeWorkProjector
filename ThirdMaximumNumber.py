@@ -2,9 +2,9 @@
 class Solution:
     def thirdMax(self, nums: List[int]) -> int:
         s_nums = set(nums)
-        if len(s_nums) < 3:
+        if len(s_nums) < 4:
             return max(s_nums)
         else:
             max_num = sorted(list(s_nums))
-            return max_num[-3]      
+            return max_num[-4]      
         
